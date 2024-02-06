@@ -1,0 +1,21 @@
+Vídeo abas -> https://youtu.be/82v2ZR-g6wY?si=0cQZ7vfZW3BTxbib
+Passo a passo install:
+    1 - Criar uma pasta com o nome do seu projeto e adicionar o arquivo UI e a pasta icon e o arquivo icons.qrc na pasta do projeto
+    2 - Criar um arquivo main.py 
+    3 - Criar uma máquina virtual comando: py -m venv venv
+    4 - ativar a máquina virtual (Clicar em executar o arquivo main no vscode)
+    5 - python.exe -m pip install --upgrade pip (atualizar o pip)
+    5 - pip install requests
+    6 - pip install pandas (gerar o arquivo excel para gerar relatórios)
+    7 - pip install openpyxl (dependência do pandas para gerar o aquivo excel)
+    8 - pip install pyside6
+    9 - pyside6-rcc icons\icons_.qrc -o icons_rc.py (transforma o aquivo em .py)
+    10 -pyside6-uic livraria.ui -o ui_main.py
+    11 - Criar os códigos da class main com as importações
+    12 - Criar o arquivo database.py no projeto e acrescentar os métodos do crud(banco de dados)
+    13 - from database import Data_base
+    14 - criar a função cadastrar
+    15 - criar no If __name__  as chamadas de funções Data,connect, create,connection
+Atualizar o arquivo py da tela criada: (exemplo)
+    pyside6-uic .\Arquivos\HistoricoDeVendas\HistoricoVendas.ui -o .\Arquivos\HistoricoDeVendas\ui_historico_vendas.py  (o segundo arquivo deve conter o mesmo nome de um já utilizado)
+Inicializar o código pelo terminal: python nome_do_arquivo.py
